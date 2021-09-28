@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            border: 15px solid transparent;
+            width: 250px;
+            padding: 10px 20px;
+            background-image: url(https://img0.baidu.com/it/u=2364759110,3999462922&fm=26&fmt=auto)
+        }
+        #round{
+            -webkit-border-image:url("../csslearn/img/test2.png") 230 310 round; /* Safari 5 and older */
+	-o-border-image:url(test2.png) 130 230 round; /* Opera */
+	border-image:url(test2.png) 230 130 round;
+        }
+        #stretch
+{
+	-webkit-border-image:url(test2.png) 300 130 stretch; /* Safari 5 and older */
+	-o-border-image:url(test2.png) 230 130 stretch; /* Opera */
+	border-image:url(test2.png) 230 130 stretch;
+}
+
+    </style>
+    <title>img</title>
+</head>
+
+<body>
+    <p><b>注意: </b> Internet Explorer 不支持 border-image 属性。</p>
+<p> border-image 属性用于设置图片的边框。</p>
+
+<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+
+<p>这是我们使用的图片素材：</p>
+<img src="../csslearn/img/test2.png" />
+</body>
+</html>
